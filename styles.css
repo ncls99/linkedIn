@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    }
+
+:root {
+    --color1: #fff;
+    --color2: #05274a;
+    font-size: 16px;
+    --zindex-navbar: 5000;
+}
+html {
+    scroll-behavior: smooth;
+    background-color: #c0bac8;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2305274a' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+ul {
+    list-style: none;
+}
+
+main{
+    float:center;
+    max-width: 1000px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navBar {
+    display: flex;
+    background-color: var(--color1);
+    opacity: 100%;
+    color: var(--color2);
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: var(--zindex-navbar);
+}
+
+.menuNav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+
+.navBar a {
+    text-decoration: none;
+    color: var(--color2);
+}
+
+.division {
+    border-left: 1px solid var(--color2);
+    padding-left: 10px;
+
+}
+
+.logoLinkedin {
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    position: relative;
+    margin: 5px;
+    border-radius: 8%;
+}
+
+.logoLinkedin img {
+    width: 100%;
+}
+
+.homebox {
+    border-radius: 10px;
+    margin-top: 80px;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color1);
+}
+
+.portrait {
+    width: 100%;
+}
+
+.portrait img {
+    width: 100%;
+}
+
+.profilePhoto {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 20%;
+    height: auto;
+    position: relative;
+    top: -27%;
+    border: 5px solid var(--color1);
+    margin-left: 42px;
+}
+
+.profilePhoto img {
+    width: 100%;
+}
+
+.presentation {
+    position: relative;
+    margin-left: 32px;
+    top: -120px
+}
+
+.presentation h2 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.presentation h3 {
+    font-weight: 400;
+    color: gray;
+}
+
+.presentation a {
+    text-decoration: none;
+    color: #1c71c7;
+    font-weight:bold;
+}
